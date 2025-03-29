@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Unidad Educativa AQG</title>
+    <link rel="stylesheet" href="Modificadores.css">
+    <link rel="stylesheet" href="Administrador.css">
+</head>
+<body>
+
+    <!-- Encabezado de bienvenida -->
+    <header>
+        <h1>Modificar Información de Noticia 2</h1>
+    </header>
+
+    <div class="sidebar">
+        <!-- Logo de la institución -->
+        <div class="logo">
+            <img src="img/Logo-AQG.png" alt="Logo de la institución" class="logo-img">
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <ul>
+                <li><a href="Administrador.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#">Usuarios</a>
+                    <ul class="submenu-items">
+                        <li><a href="CrearNuevoUsuario.html">Crear nuevos usuarios</a></li>
+                        <li><a href="CrearNuevoAdministrador.html">Crear nuevos admninistradores</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Modificar</a>
+                    <ul class="submenu-items">
+                        <li class="submenu">
+                            <a href="#">Oferta Educativa</a>
+                            <ul class="submenu-items">
+                                <li><a href="ModificarPreparatoria.html">Preparatoria</a></li>
+                                <li><a href="ModificarBasicaE.html">Básica Elemental</a></li>
+                                <li><a href="ModificarBasicaM.html">Básica Media</a></li>
+                                <li><a href="ModificarBasicaS.html">Básica Superior</a></li>
+                                <li><a href="ModificarBachillerato.html">BGU</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Noticias</a>
+                            <ul class="submenu-items">
+                                <li><a href="ModificarNoticia1.html">Noticia 1</a></li>
+                                <li><a href="ModificarNoticia2.html">Noticia 2</a></li>
+                                <li><a href="ModificarNoticia3.html">Noticia 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Botón de Cerrar Sesión al final -->
+        <div class="logout-container">
+            <button id="logout">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="modificar-elementos">
+            <h2>Formulario de Edición de Noticia 2</h2>
+            <form id="form-modificar" method="POST" enctype="multipart/form-data">
+                <!-- Mostrar y permitir editar el título -->
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Introduce el nuevo título">
+
+                <!-- Mostrar y permitir editar los párrafos -->
+                <label for="texto1">Primer párrafo</label>
+                <textarea id="texto1" name="texto1" placeholder="Escribe el primer párrafo"></textarea>
+
+                <label for="texto2">Segundo párrafo</label>
+                <textarea id="texto2" name="texto2" placeholder="Escribe el segundo párrafo"></textarea>
+
+                <label for="texto3">Tercer párrafo</label>
+                <textarea id="texto3" name="texto3" placeholder="Escribe el tercer párrafo"></textarea>
+
+                <label for="texto4">Descripción</label>
+                <textarea id="texto4" name="texto4" placeholder="Escribe el tercer párrafo"></textarea>
+
+                <!-- Mostrar y permitir cambiar la imagen -->
+                <label for="img-noticia2">Imagen de Noticia 2</label>
+                <input type="file" id="img-noticia2" name="img-noticia2" accept="image/*">
+                <button type="button" onclick="cambiarImagenNoticia2()">Cambiar Imagen de Noticia 2</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Noticia 2" id="imagen-noticia2" class="noticia2-img" width="400" height="200">
+                </div>
+
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="ModificarNoticia2.js"></script>
+    <script src="Administrador.js"></script>
+</body>
+</html>

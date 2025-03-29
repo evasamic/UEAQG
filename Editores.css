@@ -1,0 +1,42 @@
+/* Contenedor principal de Preparatoria */
+.elemental-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilos del título */
+#elemental h2 {
+    color: #cc0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 0.5rem;
+}
+
+/* Línea decorativa debajo del título */
+.title-line {
+    width: 100%;
+    height: 5px;
+    background-color: #008000; /* Verde */
+    margin: 0 auto 2rem auto; /* Espacio debajo del título */
+}
+
+/* Imagen de ancho completo centrada */
+.full-width-image {
+    width: 1350px;
+    height: 800px;
+    display: block;
+    margin: 0 auto 20px auto; /* Centra la imagen horizontalmente */
+}
+
+
+/* Estilos del texto */
+#elemental p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}

@@ -1,0 +1,99 @@
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    width: 100%; /* Ocupa el ancho completo de la ventana */
+    margin: auto;
+    overflow: hidden;
+    z-index: 1; /* Colocar el carrusel al fondo */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Ajuste de superposición de cuadros sobre el carrusel */
+.overlay-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: -50px; /* Ajustar según sea necesario */
+    z-index: 2; /* Colocar los cuadros sobre el carrusel */
+    margin-bottom: 10rem; /* Aumenta la separación entre los cuadros y el contenido siguiente */
+}
+
+.overlay-box {
+    background-color: #ffffff; /* Blanco */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.overlay-box h2 {
+    color: #0033cc; /* Azul */
+}
+
+.overlay-box p {
+    color: #333;
+}
+
+/* ---------------- Cuadros de Información ---------------- */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.info-box h3 {
+    color: #0033cc;
+    margin: 0;
+}
+
+.info-box p {
+    color: #333;
+    margin: 0;
+}

@@ -1,0 +1,79 @@
+.recursos-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilo del título centrado */
+#recursos h2 {
+    color: #cc0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Centramos el texto */
+    margin-bottom: 0.5rem;
+}
+
+/* Línea verde centrada */
+.title-line {
+    width: 90%;  /* Reduce el ancho para dejar espacio en los lados */
+    max-width: 900px; /* Limita el ancho máximo */
+    height: 5px;
+    background-color: #008000; /* Verde */
+    margin: 0 auto 2rem auto; /* Centrar y agregar espacio debajo */
+}
+
+/* Contenedor de login centrado */
+#login-container {
+    width: 320px;  /* Reducir el tamaño del formulario */
+    margin: 0 auto; /* Centrarlo */
+    text-align: left; /* Alinear los textos dentro del formulario */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para las etiquetas */
+#login-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para los inputs */
+input {
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #FFD700; /* Amarillo dorado */
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #E5C100; /* Amarillo más oscuro */
+}
+
+/* Mensaje de error */
+#login-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}

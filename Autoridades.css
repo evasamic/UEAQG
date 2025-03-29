@@ -1,0 +1,51 @@
+.autoridades-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.autoridades-title {
+    color: #cc0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Alineado a la izquierda */
+    position: relative;
+}
+
+.autoridades-line {
+    width: 100%;
+    height: 5px;
+    background-color: #008000; /* Verde */
+    margin: 0.5rem 0 2rem 0; /* Espacio debajo del título */
+}
+
+.autoridades {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.autoridad {
+    text-align: center;
+}
+
+.autoridad img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #003366;
+}
+
+.autoridad h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-top: 0.5rem;
+}
+
+.autoridad p {
+    font-size: 1.2rem;
+    color: #555;
+}

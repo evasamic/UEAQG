@@ -1,0 +1,287 @@
+/* Contenedor principal y el menú lateral */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Encabezado de bienvenida */
+.welcome-header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    width: calc(100% - 250px); /* Ajuste para no sobrepasar el menú lateral */
+    position: fixed;
+    top: 0;
+    left: 250px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo img {
+    width: 80%;
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #444;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+/* Submenú (Usuarios) */
+.submenu-items {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+.submenu-items li {
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+.submenu-items li a {
+    color: #bbb;
+}
+
+.submenu-items li a:hover {
+    background-color: #444;
+}
+
+/* Estilo del botón Cerrar Sesión */
+.logout-container {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.logout-container button {
+    background-color: #cc0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.logout-container button:hover {
+    background-color: #8b0000;
+}
+
+/* Estilos del contenedor principal */
+.main-container {
+    display: flex;
+    margin-left: 250px; /* Ajusta el margen izquierdo para evitar que se superponga con el menú */
+    margin-top: 80px; /* Para separar del encabezado */
+    padding: 20px;
+    gap: 20px; /* Espacio entre las columnas */
+    width: calc(100% - 250px); /* Asegura que el espacio restante se distribuya entre las columnas */
+}
+
+/* Estilos del formulario */
+.form-container {
+    flex: 2;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Para alinear los elementos verticalmente */
+    gap: 20px; /* Espacio entre los campos */
+    width: 100%; /* Aseguramos que ocupe todo el espacio disponible */
+}
+
+/* Estilo para cada grupo de formulario (input + label) */
+.form-group {
+    margin-bottom: 15px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px; /* Limitar el ancho máximo de los botones */
+}
+
+/* Estilo para el botón de Guardar cambios */
+button[type="submit"]:first-child {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 500px; /* Limitar el ancho máximo del botón */
+    border-radius: 4px;
+    margin-top: 20px; /* Añadir espacio por encima del botón */
+}
+
+button[type="submit"]:first-child:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el botón de Cancelar */
+button[type="submit"]:last-child {
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 500px; /* Limitar el ancho máximo del botón */
+    border-radius: 4px;
+    margin-top: 10px; /* Añadir espacio por encima del botón */
+}
+
+button[type="submit"]:last-child:hover {
+    background-color: #c82333;
+}
+
+
+/* Estilos de la sección "Usuarios Registrados" */
+.usuarios-registrados-container {
+    flex: 3;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 10px; /* Separar la tabla de los otros elementos */
+}
+
+.usuarios-registrados-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la tabla de usuarios */
+#tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#tabla-usuarios th, #tabla-usuarios td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#tabla-usuarios th {
+    background-color: #333;
+    color: white;
+}
+
+#tabla-usuarios tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabla-usuarios tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Contenedor de botones en la tabla */
+#tabla-usuarios td:last-child {
+    display: flex;               /* Usar flexbox solo para la celda de acciones */
+    justify-content: center;     /* Centrar los botones */
+    align-items: center;         /* Asegura que estén alineados verticalmente */
+    gap: 10px;                   /* Espacio entre los botones */
+}
+
+/* Estilos de los botones */
+button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+}
+
+/* Estilos para el botón de editar */
+.btn-editar {
+    color: #007bff; /* Azul */
+}
+
+.btn-editar:hover {
+    color: #0056b3;
+}
+
+/* Estilos para el botón de eliminar */
+.btn-eliminar {
+    color: #dc3545; /* Rojo */
+}
+
+.btn-eliminar:hover {
+    color: #a71d2a;
+}
+
+/* Centrar los <h2> */
+h2 {
+    text-align: center;
+}

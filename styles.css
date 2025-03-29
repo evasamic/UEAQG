@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* ---------------- Barra de Navegación ---------------- */
+nav {
+    background-color: #0033cc;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1001;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #cc0000;
+}
+
+/* Resaltar la opción activa */
+nav ul li a.active {
+    color: #cc0000 !important;
+    font-weight: bold;
+}
+
+/* ---------------- Menú desplegable ---------------- */
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 180%;
+    left: 0;
+    background-color: #0033cc;
+    min-width: 230px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+nav .dropdown-content.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .dropdown-content li {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav .dropdown-content li a {
+    color: #ffcc00;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+nav .dropdown-content li a:hover {
+    background-color: #ffcc00;
+    color: #cc0000;
+}
+
+nav .dropdown-btn {
+    transition: color 0.3s ease;
+}
+
+nav .dropdown-btn.active {
+    color: #cc0000;
+}
+
+nav .dropdown-content:hover {
+    display: block;
+}
+
+nav .dropdown-content li {
+    transition: transform 0.2s ease-in-out;
+}
+
+nav .dropdown-content li:hover {
+    transform: translateX(10px);
+}
+
+
+/* ---------------- Contenido Principal ---------------- */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+section h2 {
+    color: #cc0000;
+}
+
+/* ---------------- Mapa ---------------- */
+.map-container {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.map-container h2 {
+    color: #cc0000;
+    margin-bottom: 1rem;
+}
+
+/* ---------------- Pie de Página ---------------- */
+footer {
+    background-color: #0033cc;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}

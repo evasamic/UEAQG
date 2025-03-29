@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario - Unidad Educativa AQG</title>
+    <link rel="stylesheet" href="Administrador.css">
+</head>
+<body>
+
+    <!-- Encabezado de bienvenida -->
+    <header class="welcome-header">
+        <h1>Bienvenido, Usuario</h1>
+    </header>
+
+    <!-- Sección de Información con el logo -->
+    <section class="logo-info">
+        <div class="logo-container">
+            <img src="img/NombreInstitucion.png" alt="Logo de la institución" class="logo-img">
+        </div>
+    </section>
+
+    <div class="sidebar">
+        <!-- Logo de la institución -->
+        <div class="logo">
+            <img src="img/Logo-AQG.png" alt="Logo de la institución" class="logo-img">
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <ul>
+                <li><a href="Usuario.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#">Modificar</a>
+                    <ul class="submenu-items">
+                        <li class="submenu">
+                            <a href="#">Oferta Educativa</a>
+                            <ul class="submenu-items">
+                                <li><a href="ModificarPreparatoriaU.html">Preparatoria</a></li>
+                                <li><a href="ModificarBasicaEU.html">Básica Elemental</a></li>
+                                <li><a href="ModificarBasicaMU.html">Básica Media</a></li>
+                                <li><a href="ModificarBasicaSU.html">Básica Superior</a></li>
+                                <li><a href="ModificarBachilleratoU.html">BGU</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Noticias</a>
+                            <ul class="submenu-items">
+                                <li><a href="ModificarNoticia1U.html">Noticia 1</a></li>
+                                <li><a href="ModificarNoticia2U.html">Noticia 2</a></li>
+                                <li><a href="ModificarNoticia3U.html">Noticia 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Botón de Cerrar Sesión al final -->
+        <div class="logout-container">
+            <button id="logout">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="Administrador.js"></script>
+</body>
+</html>

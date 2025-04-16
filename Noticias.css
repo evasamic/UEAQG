@@ -1,9 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: white;
-    margin: 0;
-    padding: 0;
+/* Estilos para el título */
+.noticias h2 {
+    color: #cc0000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 10px; /* Elimina cualquier relleno */
 }
 
 .noticias-container {
@@ -27,31 +30,52 @@ body {
     justify-content: space-between;
 }
 
-.parrafo, h2 {
-    background: rgba(0, 0, 0, 0.6);
+/* Añadir pseudo-elemento para el fondo gris oscuro */
+.noticia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Gris oscuro con opacidad */
+    border-radius: 10px; /* Si quieres que las esquinas estén redondeadas */
+    z-index: 1; /* El fondo va detrás del contenido */
+}
+
+/* Título y párrafo dentro de la noticia */
+.noticia h2, .noticia p {
+    position: relative; /* Esto asegura que el texto esté por encima del fondo */
+    z-index: 2; /* El contenido estará sobre el pseudo-elemento */
+    background: none; /* Eliminamos cualquier fondo anterior */
     color: white;
     padding: 5px;
     border-radius: 5px;
 }
 
-h2 {
+/* Título */
+.noticia h2 {
     font-size: 18px;
     margin-top: 10px;
 }
 
-p {
+/* Párrafo */
+.noticia p {
     font-size: 14px;
     margin-top: 10px;
     text-align: justify;
 }
 
-.pie {
+/* Estilos para el pie de la noticia */
+.noticia .pie {
     font-size: 14px;
     margin-top: 10px;
     text-align: center;
 }
 
-.leer-mas {
+/* Estilo para el botón "Leer más" */
+.noticia .leer-mas {
+    position: relative;
     display: inline-block;
     margin-top: 15px;
     padding: 8px 15px;
@@ -62,4 +86,16 @@ p {
     font-weight: bold;
     text-align: center;
     align-self: flex-start;
+    z-index: 2; /* Asegura que el botón esté encima del fondo gris */
+}
+
+/* Efecto hover del botón */
+.noticia .leer-mas:hover {
+    background: #003366;
+    color: white;
+}
+
+/* Efecto hover para la noticia (hacerla un poco más grande) */
+.noticia:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en un 5% */
 }

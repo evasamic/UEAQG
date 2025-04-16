@@ -28,14 +28,20 @@ $conn->close();  // Cerrar la conexión a la base de datos
     <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="Editores.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+<div class="login-container">
+        <a href="Recursos.html" class="login-link">
+            <i class="fas fa-user"></i> Iniciar Sesión
+        </a>
+    </div>
     <header>
-        <img src="img/ENCABEZADO.png" alt="Imagen de la Institución" width="1200" height="138">
+        <img src="img/Encabezado1.png" alt="Imagen de la Institución" width="1171" height="114">
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">Presentación</a></li>
+            <li><a href="index.php">Inicio</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-btn">¿Quiénes somos?</a>
                 <ul class="dropdown-content">
@@ -54,10 +60,10 @@ $conn->close();  // Cerrar la conexión a la base de datos
                     <li><a href="Bachillerato.php">Bachillerato general unificado</a></li>
                 </ul>
             </li>            
-            <li><a href="Noticias.php">Noticias</a></li>
+            <li><a href="Info.php">Información</a></li>
             <li><a href="Recursos.html">Recursos</a></li>
         </ul>
-    </nav>    
+    </nav>        
     
     <div>   
         <img src="<?php echo $row['ImagenBM']; ?>" alt="Basica Media AQG" class="full-width-image">

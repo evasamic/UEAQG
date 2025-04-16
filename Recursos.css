@@ -1,49 +1,82 @@
-.recursos-container {
-    text-align: center;
-    padding: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white; /* Azul marino */
+    height: 100vh;
 }
 
-/* Estilo del título centrado */
+
+/* Layout de pantalla dividida */
+.split-layout {
+    display: flex;
+    height: calc(100vh - 60px); /* Resta el alto del login-container */
+}
+
+/* Columna izquierda con imagen */
+.left-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* mismo azul marino para consistencia */
+    padding: 2rem;
+}
+
+.left-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Columna derecha con formulario */
+.recursos-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+/* Estilo del título */
 #recursos h2 {
     color: #cc0000;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center; /* Centramos el texto */
+    text-align: center;
     margin-bottom: 0.5rem;
 }
 
-/* Línea verde centrada */
+/* Línea verde debajo del título */
 .title-line {
-    width: 90%;  /* Reduce el ancho para dejar espacio en los lados */
-    max-width: 900px; /* Limita el ancho máximo */
+    width: 90%;
+    max-width: 900px;
     height: 5px;
-    background-color: #008000; /* Verde */
-    margin: 0 auto 2rem auto; /* Centrar y agregar espacio debajo */
+    background-color: #008000;
+    margin: 0 auto 3rem auto;
 }
 
-/* Contenedor de login centrado */
+/* Contenedor del formulario */
 #login-container {
-    width: 320px;  /* Reducir el tamaño del formulario */
-    margin: 0 auto; /* Centrarlo */
-    text-align: left; /* Alinear los textos dentro del formulario */
+    width: 320px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: rgba(249, 249, 249, 0.95);
+    color: #000;
 }
 
-/* Estilos para las etiquetas */
+/* Etiquetas */
 #login-container label {
     display: block;
     font-weight: bold;
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 35px;
+    font-size: 14px;
 }
 
-/* Estilos para los inputs */
+/* Inputs */
 input {
     display: block;
     width: 90%;
@@ -54,9 +87,9 @@ input {
     font-size: 14px;
 }
 
-/* Estilos para el botón */
+/* Botón */
 button {
-    background-color: #FFD700; /* Amarillo dorado */
+    background-color: #FFD700;
     color: black;
     font-weight: bold;
     border: none;
@@ -65,10 +98,11 @@ button {
     font-size: 14px;
     width: 100%;
     border-radius: 4px;
+    margin-top: 30px;
 }
 
 button:hover {
-    background-color: #E5C100; /* Amarillo más oscuro */
+    background-color: #E5C100;
 }
 
 /* Mensaje de error */

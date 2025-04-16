@@ -43,33 +43,6 @@
     right: 10px;
 }
 
-/* Ajuste de superposición de cuadros sobre el carrusel */
-.overlay-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: -50px; /* Ajustar según sea necesario */
-    z-index: 2; /* Colocar los cuadros sobre el carrusel */
-    margin-bottom: 10rem; /* Aumenta la separación entre los cuadros y el contenido siguiente */
-}
-
-.overlay-box {
-    background-color: #ffffff; /* Blanco */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30%;
-}
-
-.overlay-box h2 {
-    color: #0033cc; /* Azul */
-}
-
-.overlay-box p {
-    color: #333;
-}
-
 /* ---------------- Cuadros de Información ---------------- */
 .info-boxes {
     display: flex;

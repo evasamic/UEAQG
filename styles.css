@@ -1,3 +1,4 @@
+/* Estilos generales para toda la página */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,9 +9,9 @@ body {
     min-height: 100vh;
 }
 
+/* Estilos para el encabezado */
 header {
     background-color: #ffffff;
-    color: black;
     padding: 1rem 0;
     text-align: center;
 }
@@ -20,10 +21,35 @@ header img {
     margin: 0 auto;
 }
 
+/* Estilos para la barra de inicio de sesión */
+.login-container {
+    background-color: #003366; /* Fondo azul marino */
+    color: #f2f0db;
+    padding: 10px 20px; /* Espaciado alrededor del enlace */
+    text-align: right; /* Alinea el enlace a la derecha */
+}
+
+.login-link {
+    color: #f2f0db;
+    text-decoration: none;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    display: inline-flex; /* Usamos inline-flex para que el ícono y el texto estén alineados */
+    align-items: center; /* Centra el ícono y el texto verticalmente */
+    transition: color 0.3s ease;
+}
+
+.login-link i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.login-link:hover {
+    color: #ffcc00; /* Cambia el color cuando se pasa el ratón */
+}
+
 /* ---------------- Barra de Navegación ---------------- */
 nav {
-    background-color: #0033cc;
-    padding: 1rem 0;
+    background-color: #003366;
+    padding: 0.2rem 0;
     position: relative;
     z-index: 1001;
 }
@@ -41,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffcc00;
+    color: #f2f0db;
     text-decoration: none;
     transition: color 0.3s ease;
     padding: 10px 15px;
@@ -49,12 +75,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #cc0000;
+    color: #ffcc00;
 }
 
 /* Resaltar la opción activa */
 nav ul li a.active {
-    color: #cc0000 !important;
+    color: #af4425 !important;
     font-weight: bold;
 }
 
@@ -66,9 +92,9 @@ nav .dropdown {
 nav .dropdown-content {
     display: none;
     position: absolute;
-    top: 180%;
+    top: 145%;
     left: 0;
-    background-color: #0033cc;
+    background-color: #003366;
     min-width: 230px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -91,7 +117,7 @@ nav .dropdown-content li {
 }
 
 nav .dropdown-content li a {
-    color: #ffcc00;
+    color: #f2f0db;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -123,44 +149,28 @@ nav .dropdown-content li:hover {
     transform: translateX(10px);
 }
 
-
-/* ---------------- Contenido Principal ---------------- */
-main {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section {
-    margin-bottom: 2rem;
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-}
-
-section h2 {
-    color: #cc0000;
+/* Estilo para la línea verde */
+.title-line {
+    width: 100%; /* La línea ocupará todo el ancho del contenedor */
+    height: 5px;
+    background-color: #445a14; /* Verde */
 }
 
 /* ---------------- Mapa ---------------- */
-.map-container {
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 800px;
-    width: 100%;
-}
-
 .map-container h2 {
     color: #cc0000;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 10px; /* Elimina cualquier relleno */
 }
 
 /* ---------------- Pie de Página ---------------- */
 footer {
     background-color: #0033cc;
-    color: white;
+    color: #f2f0db;
     text-align: center;
     padding: 0.5rem 0;
     position: relative;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-03-2025 a las 22:01:57
+-- Tiempo de generación: 04-05-2025 a las 22:39:06
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -33,15 +33,33 @@ CREATE TABLE `bachillerato` (
   `Parrafo1Ba` text NOT NULL,
   `Parrafo2Ba` text NOT NULL,
   `Parrafo3Ba` text NOT NULL,
-  `ImagenBa` varchar(255) NOT NULL
+  `ImagenBa` varchar(255) NOT NULL,
+  `ImagenHorario1Ba` varchar(255) NOT NULL,
+  `ImagenHorario2Ba` varchar(255) NOT NULL,
+  `ImagenHorario3Ba` varchar(255) NOT NULL,
+  `ImagenHorario4Ba` varchar(255) NOT NULL,
+  `ImagenHorario5Ba` varchar(255) NOT NULL,
+  `ImagenHorario6Ba` varchar(255) NOT NULL,
+  `ImagenHorario7Ba` varchar(255) NOT NULL,
+  `ImagenHorario8Ba` varchar(255) NOT NULL,
+  `ImagenHorario9Ba` varchar(255) NOT NULL,
+  `ImagenHorario10Ba` varchar(255) NOT NULL,
+  `ImagenHorario11Ba` varchar(255) NOT NULL,
+  `ImagenHorario12Ba` varchar(255) NOT NULL,
+  `ImagenHorario13Ba` varchar(255) NOT NULL,
+  `ImagenHorario14Ba` varchar(255) NOT NULL,
+  `ImagenHorario15Ba` varchar(255) NOT NULL,
+  `ImagenHorario16Ba` varchar(255) NOT NULL,
+  `ImagenHorario17Ba` varchar(255) NOT NULL,
+  `ImagenHorario18Ba` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `bachillerato`
 --
 
-INSERT INTO `bachillerato` (`idBa`, `TituloBa`, `Parrafo1Ba`, `Parrafo2Ba`, `Parrafo3Ba`, `ImagenBa`) VALUES
-(1, 'Bachillerato 1ro, 2do y 3er año de BGU', 'El Bachillerato General Unificado BGU, es la etapa final de la educación escolarizada, previa a la continuación de una carrera universitaria, por ello a más de abarcar los contenidos de las asignaturas del tronco común, prepara a los estudiantes para continuar sus estudios exitosamente.', 'El estudio en el bachillerato tiene un mayor grado de exigencia, y trata de hacer del estudiante una persona generadora de sus conocimientos, estimulando la sana competencia y alentando e constante deseo de superación.', 'La formación académica es un gran reto institucional y profesional para cada uno de los docentes formadores, sin descuidar el aporte al crecimiento personal de los estudiantes, por ello la práctica de valores no solo es una exigencia normativa propia de la Institución, sino un compromiso social.', 'img/Bachillerato.jpg');
+INSERT INTO `bachillerato` (`idBa`, `TituloBa`, `Parrafo1Ba`, `Parrafo2Ba`, `Parrafo3Ba`, `ImagenBa`, `ImagenHorario1Ba`, `ImagenHorario2Ba`, `ImagenHorario3Ba`, `ImagenHorario4Ba`, `ImagenHorario5Ba`, `ImagenHorario6Ba`, `ImagenHorario7Ba`, `ImagenHorario8Ba`, `ImagenHorario9Ba`, `ImagenHorario10Ba`, `ImagenHorario11Ba`, `ImagenHorario12Ba`, `ImagenHorario13Ba`, `ImagenHorario14Ba`, `ImagenHorario15Ba`, `ImagenHorario16Ba`, `ImagenHorario17Ba`, `ImagenHorario18Ba`) VALUES
+(1, 'Bachillerato: 1ro, 2do y 3er año', 'El Bachillerato en Ciencias está diseñado para brindar una formación académica sólida en áreas fundamentales como matemáticas, física, química y biología, con un enfoque especial en el pensamiento crítico y la resolución de problemas. Este programa prepara a los estudiantes para continuar estudios superiores en campos como la ingeniería, la medicina, las ciencias naturales y otras carreras universitarias que requieren una base científica sólida. Además, fomenta el desarrollo de habilidades investigativas, el uso de tecnologías y el trabajo colaborativo.', 'Por su parte, el Bachillerato en Servicios Contable ofrece una preparación práctica y teórica orientada al mundo financiero, empresarial y administrativo. Los estudiantes adquieren conocimientos en contabilidad, administración, legislación fiscal y uso de software contable, lo que les permite desenvolverse con eficiencia en el ámbito laboral o continuar estudios en carreras afines como contaduría pública, administración de empresas o economía. Este programa también promueve valores como la ética profesional y la responsabilidad en el manejo de recursos económicos.', 'Ambos bachilleratos ofrecen una formación integral que combina conocimientos académicos con el desarrollo personal y social del estudiante. A través de actividades extracurriculares, orientación vocacional y prácticas supervisadas, se busca que los jóvenes egresen no solo con competencias técnicas, sino también con la capacidad de adaptarse a los cambios del entorno y aportar activamente a su comunidad. La diversidad de enfoques permite a cada estudiante elegir el camino que mejor se alinea con sus intereses y aspiraciones profesionales.', 'img/Bachillerato.jpg', 'img/1ABC.jpg', 'img/1BBC.jpg', 'img/1CBC.jpg', 'img/2ABC.jpg', 'img/2BBC.jpg', 'img/2CBC.jpg', 'img/3ABC.jpg', 'img/3BBC.jpg', 'img/3CBC.jpg', 'img/1ABT.jpg', 'img/1BBT.jpg', 'img/1CBT.jpg', 'img/2ABT.jpg', 'img/2BBT.jpg', 'img/2CBT.jpg', 'img/3ABT.jpg', 'img/3BBT.jpg', 'img/3CBT.jpg');
 
 -- --------------------------------------------------------
 
@@ -55,15 +73,24 @@ CREATE TABLE `basicae` (
   `Parrafo1BE` text NOT NULL,
   `Parrafo2BE` text NOT NULL,
   `Parrafo3BE` text NOT NULL,
-  `ImagenBE` varchar(255) NOT NULL
+  `ImagenBE` varchar(255) NOT NULL,
+  `ImagenHorario1BE` varchar(255) NOT NULL,
+  `ImagenHorario2BE` varchar(255) NOT NULL,
+  `ImagenHorario3BE` varchar(255) NOT NULL,
+  `ImagenHorario4BE` varchar(255) NOT NULL,
+  `ImagenHorario5BE` varchar(255) NOT NULL,
+  `ImagenHorario6BE` varchar(255) NOT NULL,
+  `ImagenHorario7BE` varchar(255) NOT NULL,
+  `ImagenHorario8BE` varchar(255) NOT NULL,
+  `ImagenHorario9BE` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `basicae`
 --
 
-INSERT INTO `basicae` (`idBE`, `TituloBE`, `Parrafo1BE`, `Parrafo2BE`, `Parrafo3BE`, `ImagenBE`) VALUES
-(1, 'BÁSICA ELEMENTAL 2DO, 3RO Y 4TO DE EGB', 'La Básica Elemental en la Unidad Educativa \"Alfonso Quiñónez George\" abarca los niveles de 2do, 3ro y 4to de Educación General Básica (EGB), proporcionando a los estudiantes una educación integral que fomenta el desarrollo de habilidades fundamentales en lectura, escritura, matemáticas y ciencias.', 'En este ciclo, se fortalece el pensamiento lógico, la creatividad y el trabajo en equipo, promoviendo una formación basada en valores como la responsabilidad, el respeto y la disciplina. Nuestro modelo educativo incorpora estrategias innovadoras que potencian el aprendizaje a través de la exploración, la experimentación y el juego didáctico.', 'Contamos con docentes comprometidos que guían a los estudiantes en su proceso de crecimiento académico y personal, asegurando una base sólida para su formación futura. La institución brinda un ambiente seguro y motivador, donde los niños desarrollan sus capacidades y fortalecen su confianza para los siguientes niveles educativos.', 'img/BasicaElemental.png');
+INSERT INTO `basicae` (`idBE`, `TituloBE`, `Parrafo1BE`, `Parrafo2BE`, `Parrafo3BE`, `ImagenBE`, `ImagenHorario1BE`, `ImagenHorario2BE`, `ImagenHorario3BE`, `ImagenHorario4BE`, `ImagenHorario5BE`, `ImagenHorario6BE`, `ImagenHorario7BE`, `ImagenHorario8BE`, `ImagenHorario9BE`) VALUES
+(1, 'BÁSICA ELEMENTAL: 2DO, 3RO Y 4TO DE EGB', 'La Básica Elemental en la Unidad Educativa \"Alfonso Quiñónez George\" abarca los niveles de 2do, 3ro y 4to de Educación General Básica (EGB), proporcionando a los estudiantes una educación integral que fomenta el desarrollo de habilidades fundamentales en lectura, escritura, matemáticas y ciencias.', 'En este ciclo, se fortalece el pensamiento lógico, la creatividad y el trabajo en equipo, promoviendo una formación basada en valores como la responsabilidad, el respeto y la disciplina. Nuestro modelo educativo incorpora estrategias innovadoras que potencian el aprendizaje a través de la exploración, la experimentación y el juego didáctico.', 'Contamos con docentes comprometidos que guían a los estudiantes en su proceso de crecimiento académico y personal, asegurando una base sólida para su formación futura. La institución brinda un ambiente seguro y motivador, donde los niños desarrollan sus capacidades y fortalecen su confianza para los siguientes niveles educativos.', 'img/BasicaElemental.jpg', 'img/2A.jpg', 'img/2B.jpg', 'img/2C.jpg', 'img/3A.jpg', 'img/3B.jpg', 'img/3C.jpg', 'img/4A.jpg', 'img/4B.jpg', 'img/4C.jpg');
 
 -- --------------------------------------------------------
 
@@ -77,15 +104,23 @@ CREATE TABLE `basicam` (
   `Parrafo1BM` text NOT NULL,
   `Parrafo2BM` text NOT NULL,
   `Parrafo3BM` text NOT NULL,
-  `ImagenBM` varchar(255) NOT NULL
+  `ImagenBM` varchar(255) NOT NULL,
+  `ImagenHorario1BM` varchar(255) NOT NULL,
+  `ImagenHorario2BM` varchar(255) NOT NULL,
+  `ImagenHorario3BM` varchar(255) NOT NULL,
+  `ImagenHorario4BM` varchar(255) NOT NULL,
+  `ImagenHorario5BM` varchar(255) NOT NULL,
+  `ImagenHorario6BM` varchar(255) NOT NULL,
+  `ImagenHorario7BM` varchar(255) NOT NULL,
+  `ImagenHorario8BM` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `basicam`
 --
 
-INSERT INTO `basicam` (`idBM`, `TituloBM`, `Parrafo1BM`, `Parrafo2BM`, `Parrafo3BM`, `ImagenBM`) VALUES
-(1, 'BÁSICA MEDIA 5TO, 6TO Y 7MO DE EGB', 'La Básica Media en la Unidad Educativa \"Alfonso Quiñónez George\" comprende los niveles de 5to, 6to y 7mo de Educación General Básica (EGB). En esta etapa, los estudiantes fortalecen sus conocimientos en áreas clave como matemáticas, lenguaje, ciencias naturales y estudios sociales, a través de metodologías innovadoras y participativas.', 'Nuestro enfoque pedagógico promueve el desarrollo del pensamiento crítico, la autonomía y el trabajo colaborativo, preparando a los estudiantes para enfrentar nuevos retos académicos. Además, se fomenta el uso de herramientas tecnológicas y recursos didácticos que enriquecen su aprendizaje y estimulan su creatividad.', 'La institución se enfoca en la formación integral de los estudiantes, inculcando valores como el respeto, la responsabilidad y la solidaridad. Con el apoyo de docentes capacitados y un ambiente seguro y motivador, los niños y niñas desarrollan sus habilidades y consolidan su confianza para la educación básica superior.', 'img/BasicaMedia.png');
+INSERT INTO `basicam` (`idBM`, `TituloBM`, `Parrafo1BM`, `Parrafo2BM`, `Parrafo3BM`, `ImagenBM`, `ImagenHorario1BM`, `ImagenHorario2BM`, `ImagenHorario3BM`, `ImagenHorario4BM`, `ImagenHorario5BM`, `ImagenHorario6BM`, `ImagenHorario7BM`, `ImagenHorario8BM`) VALUES
+(1, 'BÁSICA MEDIA: 5TO, 6TO Y 7MO DE EGB', 'La Básica Media en la Unidad Educativa \"Alfonso Quiñónez George\" comprende los niveles de 5to, 6to y 7mo de Educación General Básica (EGB). En esta etapa, los estudiantes fortalecen sus conocimientos en áreas clave como matemáticas, lenguaje, ciencias naturales y estudios sociales, a través de metodologías innovadoras y participativas.', 'Nuestro enfoque pedagógico promueve el desarrollo del pensamiento crítico, la autonomía y el trabajo colaborativo, preparando a los estudiantes para enfrentar nuevos retos académicos. Además, se fomenta el uso de herramientas tecnológicas y recursos didácticos que enriquecen su aprendizaje y estimulan su creatividad.', 'La institución se enfoca en la formación integral de los estudiantes, inculcando valores como el respeto, la responsabilidad y la solidaridad. Con el apoyo de docentes capacitados y un ambiente seguro y motivador, los niños y niñas desarrollan sus habilidades y consolidan su confianza para la educación básica superior.', 'img/BasicaMedia.jpg', 'img/2A.jpg', 'img/2A.jpg', 'img/2A.jpg', 'img/2A.jpg', 'img/2A.jpg', 'img/2A.jpg', 'img/2A.jpg', 'img/2A.jpg');
 
 -- --------------------------------------------------------
 
@@ -99,15 +134,24 @@ CREATE TABLE `basicas` (
   `Parrafo1BS` text NOT NULL,
   `Parrafo2BS` text NOT NULL,
   `Parrafo3BS` text NOT NULL,
-  `ImagenBS` varchar(255) NOT NULL
+  `ImagenBS` varchar(255) NOT NULL,
+  `ImagenHorario1BS` varchar(255) NOT NULL,
+  `ImagenHorario2BS` varchar(255) NOT NULL,
+  `ImagenHorario3BS` varchar(255) NOT NULL,
+  `ImagenHorario4BS` varchar(255) NOT NULL,
+  `ImagenHorario5BS` varchar(255) NOT NULL,
+  `ImagenHorario6BS` varchar(255) NOT NULL,
+  `ImagenHorario7BS` varchar(255) NOT NULL,
+  `ImagenHorario8BS` varchar(255) NOT NULL,
+  `ImagenHorario9BS` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `basicas`
 --
 
-INSERT INTO `basicas` (`idBS`, `TituloBS`, `Parrafo1BS`, `Parrafo2BS`, `Parrafo3BS`, `ImagenBS`) VALUES
-(1, 'Básica Superior 8vo, 9no y 10mo de EGB', 'Cierra el ciclo de la EGB, para continuar con el Bachillerato General Unificado. Por esta consideración en 8vo, 9no y 10mo años se prepara a los estudiantes en los conocimientos fundamentales para el bachillerato, por cuya razón la exigencia es mayor. En cuanto a la formación académica se buscan los mejores métodos y estrategias para mantener el interés de los estudiantes en cuanto concierne al logro de conocimientos significativos.', 'El proceso de recuperación es continuo y responde a compromiso personal del estudiante por lograr el conocimiento tratado, por ser el último subnivel de la EGB la investigación, experimentación y exposición tiene alto grado de exigencia, como métodos activos de aprendizaje, para despertar en los estudiantes el deseo de ampliar sus conocimientos, hacer de la investigación un hábito y aprender a actuar en público.', 'La formación académica es concordante a la formación en valores y el conocimiento de los saberes ancestrales su práctica es permanente y oportuna a las circunstancias que se van presentando.', 'img/BasicaSuperior.jpg');
+INSERT INTO `basicas` (`idBS`, `TituloBS`, `Parrafo1BS`, `Parrafo2BS`, `Parrafo3BS`, `ImagenBS`, `ImagenHorario1BS`, `ImagenHorario2BS`, `ImagenHorario3BS`, `ImagenHorario4BS`, `ImagenHorario5BS`, `ImagenHorario6BS`, `ImagenHorario7BS`, `ImagenHorario8BS`, `ImagenHorario9BS`) VALUES
+(1, 'Básica Superior: 8vo, 9no y 10mo de EGB', 'Cierra el ciclo de la EGB, para continuar con el Bachillerato General Unificado. Por esta consideración en 8vo, 9no y 10mo años se prepara a los estudiantes en los conocimientos fundamentales para el bachillerato, por cuya razón la exigencia es mayor. En cuanto a la formación académica se buscan los mejores métodos y estrategias para mantener el interés de los estudiantes en cuanto concierne al logro de conocimientos significativos.', 'El proceso de recuperación es continuo y responde a compromiso personal del estudiante por lograr el conocimiento tratado, por ser el último subnivel de la EGB la investigación, experimentación y exposición tiene alto grado de exigencia, como métodos activos de aprendizaje, para despertar en los estudiantes el deseo de ampliar sus conocimientos, hacer de la investigación un hábito y aprender a actuar en público.', 'La formación académica es concordante a la formación en valores y el conocimiento de los saberes ancestrales su práctica es permanente y oportuna a las circunstancias que se van presentando.', 'img/BasicaSuperior.jpg', 'img/8A.jpg', 'img/8B.jpg', 'img/8C.jpg', 'img/9A.jpg', 'img/9B.jpg', 'img/9C.jpg', 'img/10A.jpg', 'img/10B.jpg', 'img/10C.jpg');
 
 -- --------------------------------------------------------
 
@@ -147,7 +191,35 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`idInfo`, `ZonaInfo`, `ProvinciaInfo`, `CodProInfo`, `CantonInfo`, `CodCanInfo`, `ParroquiaInfo`, `CodParroquiaInfo`, `CodInsEduInfo`, `InsEduInfo`, `EscolaridadInfo`, `TipEduInfo`, `NivelEduInfo`, `SostenimientoInfo`, `AreaInfo`, `RegimenescInfo`, `JurisdiccionInfo`, `ModalidadInfo`, `JornadaInfo`, `TenenciaInfo`, `AccesoInfo`, `DocentesInfo`, `EstudiantesInfo`, `PadronInfo`) VALUES
-(1, 'Zona 1', 'Esmeraldas', '08', 'Esmeraldas', '0801', 'Simón Plata Torres', '080105', '08H00369', 'UNIDAD EDUCATIVA ALFONSO QUIÑONEZ GEORGE', 'Escolarizada', 'Educación Regular', 'Inicial, Educación Básica y Bachillerato', 'Fiscal', 'Urbana', 'Costa', 'Intercultural', 'Presencial', 'Matutina y Vespertina', 'Propio', 'Terrestre', '47 mujeres / 17 varones, con un total de 64 docentes', '831 mujeres / 756 varones, con un total de 1587 estudiantes', '2021 - 2022');
+(1, 'Zona 1', 'Esmeraldas', '08', 'Esmeraldas', '0801', 'Simón Plata Torres', '080105', '08H00369', 'UNIDAD EDUCATIVA ALFONSO QUIÑONEZ GEORGE', 'Escolarizada', 'Educación Regular', 'Inicial, Preparatoria, Básica Elemental, Básica Media, Bachillerato', 'Fiscal', 'Urbana', 'Costa', 'Intercultural', 'Presencial', 'Matutina y Vespertina', 'Propio', 'Terrestre', '56 mujeres / 10 varones, con un total de 66 docentes', '774 mujeres / 753 varones, con un total de 1527 estudiantes', '2024 - 2025');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `inicial`
+--
+
+CREATE TABLE `inicial` (
+  `idInicial` int(11) NOT NULL,
+  `TituloInicial` varchar(255) NOT NULL,
+  `Parrafo1Inicial` text NOT NULL,
+  `Parrafo2Inicial` text NOT NULL,
+  `Parrafo3Inicial` text NOT NULL,
+  `ImagenInicial` varchar(255) NOT NULL,
+  `ImagenHorario1Inicial` varchar(255) NOT NULL,
+  `ImagenHorario2Inicial` varchar(255) NOT NULL,
+  `ImagenHorario3Inicial` varchar(255) NOT NULL,
+  `ImagenHorario4Inicial` varchar(255) NOT NULL,
+  `ImagenHorario5Inicial` varchar(255) NOT NULL,
+  `ImagenHorario6Inicial` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `inicial`
+--
+
+INSERT INTO `inicial` (`idInicial`, `TituloInicial`, `Parrafo1Inicial`, `Parrafo2Inicial`, `Parrafo3Inicial`, `ImagenInicial`, `ImagenHorario1Inicial`, `ImagenHorario2Inicial`, `ImagenHorario3Inicial`, `ImagenHorario4Inicial`, `ImagenHorario5Inicial`, `ImagenHorario6Inicial`) VALUES
+(1, 'INICIAL: 1º Y 2º', 'La Educación Inicial es el proceso de acompañamiento al desarrollo integral de niños menores de 5 años, y tiene como objetivo potenciar su aprendizaje y promover su bienestar mediante experiencias significativas y oportunas que se dan en ambientes estimulantes, saludables y seguros. Se marca como fin garantizar y respetar los derechos de la niñez, así como la diversidad cultural y lingüística, el ritmo propio de crecimiento y de aprendizaje, y potenciar sus capacidades, habilidades y destrezas.', 'El nivel Inicial se divide en 2 subniveles:\r\n\r\n- Inicial (Sub-nivel 1), que corresponde a 1º de Inicial y preferentemente se ofrece a los estudiantes de 3 años de edad.\r\n- Inicial (Sub-nivel 2), que corresponde a 2º de Inicial. y preferentemente se ofrece a los estudiantes de 4 años de edad.', 'Los niños de esta edad, de manera natural, buscan explorar, experimentar, jugar y crear, actividades que llevan a cabo por medio de la interacción con los otros, con la naturaleza y con su cultura. Los padres y las madres, los familiares y otras personas de su entorno son muy importantes y deben darles cuidado, protección y afecto para garantizar la formación de niños felices y saludables, capaces de aprender y desarrollarse.', 'img/Inicial.jpg', 'img/Inicial1.jpg', 'img/Inicial2.jpg', 'img/Inicial3.jpg', 'img/Inicial4.jpg', 'img/Inicial5.jpg', 'img/Inicial6.jpg');
 
 -- --------------------------------------------------------
 
@@ -230,15 +302,18 @@ CREATE TABLE `preparatoria` (
   `Parrafo1Prepa` text NOT NULL,
   `Parrafo2Prepa` text NOT NULL,
   `Parrafo3Prepa` text NOT NULL,
-  `ImagenPrepa` varchar(255) NOT NULL
+  `ImagenPrepa` varchar(255) NOT NULL,
+  `ImagenHorario1Prepa` varchar(255) NOT NULL,
+  `ImagenHorario2Prepa` varchar(255) NOT NULL,
+  `ImagenHorario3Prepa` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `preparatoria`
 --
 
-INSERT INTO `preparatoria` (`idPrepa`, `TituloPrepa`, `Parrafo1Prepa`, `Parrafo2Prepa`, `Parrafo3Prepa`, `ImagenPrepa`) VALUES
-(1, 'PREPARATORIA 1ER AÑO DE EGB', 'La etapa de Preparatoria en la Unidad Educativa \"Alfonso Quiñónez George\" es un pilar fundamental en la educación inicial de los niños. Nuestro enfoque pedagógico está diseñado para fomentar el desarrollo cognitivo, social y emocional a través de metodologías activas y dinámicas.', 'En este nivel, los estudiantes comienzan su aprendizaje con una base sólida en lectura, escritura y habilidades matemáticas, acompañados por docentes altamente capacitados. Se promueve un ambiente estimulante donde los niños exploran el conocimiento mediante el juego, la creatividad y la interacción con su entorno.', 'Nuestro compromiso es proporcionar a los más pequeños un espacio seguro, afectivo y enriquecedor, donde puedan desarrollar su potencial y prepararse para los siguientes niveles educativos con confianza y entusiasmo.', 'img/Preparatoria-Banner.png');
+INSERT INTO `preparatoria` (`idPrepa`, `TituloPrepa`, `Parrafo1Prepa`, `Parrafo2Prepa`, `Parrafo3Prepa`, `ImagenPrepa`, `ImagenHorario1Prepa`, `ImagenHorario2Prepa`, `ImagenHorario3Prepa`) VALUES
+(1, 'PREPARATORIA: 1ER AÑO DE EGB', 'La etapa de Preparatoria en la Unidad Educativa \"Alfonso Quiñónez George\" es un pilar fundamental en la educación inicial de los niños. Nuestro enfoque pedagógico está diseñado para fomentar el desarrollo cognitivo, social y emocional a través de metodologías activas y dinámicas.', 'En este nivel, los estudiantes comienzan su aprendizaje con una base sólida en lectura, escritura y habilidades matemáticas, acompañados por docentes altamente capacitados. Se promueve un ambiente estimulante donde los niños exploran el conocimiento mediante el juego, la creatividad y la interacción con su entorno.', 'Nuestro compromiso es proporcionar a los más pequeños un espacio seguro, afectivo y enriquecedor, donde puedan desarrollar su potencial y prepararse para los siguientes niveles educativos con confianza y entusiasmo.', 'img/Preparatoria.jpg', 'img/PreparatoriaA.jpg', 'img/PreparatoriaB.jpg', 'img/PreparatoriaC.jpg');
 
 -- --------------------------------------------------------
 
@@ -319,6 +394,12 @@ ALTER TABLE `info`
   ADD PRIMARY KEY (`idInfo`);
 
 --
+-- Indices de la tabla `inicial`
+--
+ALTER TABLE `inicial`
+  ADD PRIMARY KEY (`idInicial`);
+
+--
 -- Indices de la tabla `noticia1`
 --
 ALTER TABLE `noticia1`
@@ -387,6 +468,12 @@ ALTER TABLE `basicas`
 --
 ALTER TABLE `info`
   MODIFY `idInfo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `inicial`
+--
+ALTER TABLE `inicial`
+  MODIFY `idInicial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `noticia1`

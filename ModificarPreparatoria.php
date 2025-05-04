@@ -5,7 +5,7 @@ include("Conexion.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Obtener los datos de la tabla 'preparatoria'
-    $sql = "SELECT TituloPrepa, Parrafo1Prepa, Parrafo2Prepa, Parrafo3Prepa, ImagenPrepa FROM preparatoria WHERE idPrepa = 1";  // Suponiendo que idPrepa = 1 es el único registro
+    $sql = "SELECT TituloPrepa, Parrafo1Prepa, Parrafo2Prepa, Parrafo3Prepa, ImagenPrepa, ImagenHorario1Prepa, ImagenHorario2Prepa, ImagenHorario3Prepa FROM preparatoria WHERE idPrepa = 1";  // Suponiendo que idPrepa = 1 es el único registro
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -29,12 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_FILES['img-preparatoria']) && $_FILES['img-preparatoria']['error'] == 0) {
         $imgTempPath = $_FILES['img-preparatoria']['tmp_name'];
         $imgName = $_FILES['img-preparatoria']['name'];
-        $imgPath = "img/" . $imgName;  // Ruta de destino con el nombre original
+        $imgPath1 = "img/" . $imgName;  // Ruta de destino con el nombre original
 
         // Verificar si la imagen ya existe
-        if (!file_exists($imgPath)) {
+        if (!file_exists($imgPath1)) {
             // Si no existe la imagen, moverla al directorio
-            move_uploaded_file($imgTempPath, $imgPath);
+            move_uploaded_file($imgTempPath, $imgPath1);
         }
         // Si la imagen ya existe, no hacer nada, mantener el archivo tal como está
     } else {
@@ -43,9 +43,78 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            $imgPath = $row['ImagenPrepa'];  // Usamos la imagen existente
+            $imgPath1 = $row['ImagenPrepa'];  // Usamos la imagen existente
         } else {
-            $imgPath = null;
+            $imgPath1 = null;
+        }
+    }
+
+    if (isset($_FILES['img-horario1preparatoria']) && $_FILES['img-horario1preparatoria']['error'] == 0) {
+        $imgTempPath = $_FILES['img-horario1preparatoria']['tmp_name'];
+        $imgName = $_FILES['img-horario1preparatoria']['name'];
+        $imgPath2 = "img/" . $imgName;  // Ruta de destino con el nombre original
+
+        // Verificar si la imagen ya existe
+        if (!file_exists($imgPath2)) {
+            // Si no existe la imagen, moverla al directorio
+            move_uploaded_file($imgTempPath, $imgPath2);
+        }
+        // Si la imagen ya existe, no hacer nada, mantener el archivo tal como está
+    } else {
+        // Si no se sube imagen, no modificar la ruta de la imagen en la base de datos
+        $sql = "SELECT ImagenHorario1Prepa FROM preparatoria WHERE idPrepa = 1";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $imgPath2 = $row['ImagenHorario1Prepa'];  // Usamos la imagen existente
+        } else {
+            $imgPath2 = null;
+        }
+    }
+
+    if (isset($_FILES['img-horario2preparatoria']) && $_FILES['img-horario2preparatoria']['error'] == 0) {
+        $imgTempPath = $_FILES['img-horario2preparatoria']['tmp_name'];
+        $imgName = $_FILES['img-horario2preparatoria']['name'];
+        $imgPath3 = "img/" . $imgName;  // Ruta de destino con el nombre original
+
+        // Verificar si la imagen ya existe
+        if (!file_exists($imgPath3)) {
+            // Si no existe la imagen, moverla al directorio
+            move_uploaded_file($imgTempPath, $imgPath3);
+        }
+        // Si la imagen ya existe, no hacer nada, mantener el archivo tal como está
+    } else {
+        // Si no se sube imagen, no modificar la ruta de la imagen en la base de datos
+        $sql = "SELECT ImagenHorario2Prepa FROM preparatoria WHERE idPrepa = 1";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $imgPath3 = $row['ImagenHorario2Prepa'];  // Usamos la imagen existente
+        } else {
+            $imgPath3 = null;
+        }
+    }
+
+    if (isset($_FILES['img-horario3preparatoria']) && $_FILES['img-horario3preparatoria']['error'] == 0) {
+        $imgTempPath = $_FILES['img-horario3preparatoria']['tmp_name'];
+        $imgName = $_FILES['img-horario3preparatoria']['name'];
+        $imgPath4 = "img/" . $imgName;  // Ruta de destino con el nombre original
+
+        // Verificar si la imagen ya existe
+        if (!file_exists($imgPath4)) {
+            // Si no existe la imagen, moverla al directorio
+            move_uploaded_file($imgTempPath, $imgPath4);
+        }
+        // Si la imagen ya existe, no hacer nada, mantener el archivo tal como está
+    } else {
+        // Si no se sube imagen, no modificar la ruta de la imagen en la base de datos
+        $sql = "SELECT ImagenHorario3Prepa FROM preparatoria WHERE idPrepa = 1";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $imgPath4 = $row['ImagenHorario3Prepa'];  // Usamos la imagen existente
+        } else {
+            $imgPath4 = null;
         }
     }
 
@@ -55,11 +124,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Parrafo1Prepa = ?, 
                 Parrafo2Prepa = ?, 
                 Parrafo3Prepa = ?, 
-                ImagenPrepa = ?
+                ImagenPrepa = ?,
+                ImagenHorario1Prepa = ?,
+                ImagenHorario2Prepa = ?,
+                ImagenHorario3Prepa = ?
             WHERE idPrepa = 1";  // Suponiendo que idPrepa = 1 es el único registro
 
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param('sssss', $titulo, $texto1, $texto2, $texto3, $imgPath);
+    $stmt->bind_param('ssssssss', $titulo, $texto1, $texto2, $texto3, $imgPath1, $imgPath2, $imgPath3, $imgPath4);
     
     if ($stmt->execute()) {
         echo json_encode(['success' => true]);

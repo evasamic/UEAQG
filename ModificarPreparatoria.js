@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('texto2').value = data.Parrafo2Prepa;
             document.getElementById('texto3').value = data.Parrafo3Prepa;
             document.getElementById('imagen-preparatoria').src = data.ImagenPrepa || "img/Preparatoria-Banner.png";  // Imagen predeterminada
+            document.getElementById('imagen-horario1preparatoria').src = data.ImagenHorario1Prepa || "img/PreparatoriaA.jpg";  // Imagen predeterminada
+            document.getElementById('imagen-horario2preparatoria').src = data.ImagenHorario2Prepa || "img/PreparatoriaB.jpg";  // Imagen predeterminada
+            document.getElementById('imagen-horario3preparatoria').src = data.ImagenHorario2Prepa || "img/PreparatoriaC.jpg";  // Imagen predeterminada
         }
     })
     .catch(error => console.error('Error al cargar los datos:', error));
@@ -24,6 +27,42 @@ function cambiarImagenPreparatoria() {
         const reader = new FileReader();
         reader.onload = function (e) {
             document.getElementById('imagen-preparatoria').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+function cambiarImagenHorario1Prepa() {
+    const inputFile = document.getElementById('img-horario1preparatoria');
+    const file = inputFile.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById('imagen-horario1preparatoria').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+function cambiarImagenHorario2Prepa() {
+    const inputFile = document.getElementById('img-horario2preparatoria');
+    const file = inputFile.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById('imagen-horario2preparatoria').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+function cambiarImagenHorario3Prepa() {
+    const inputFile = document.getElementById('img-horario3preparatoria');
+    const file = inputFile.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById('imagen-horario3preparatoria').src = e.target.result;
         };
         reader.readAsDataURL(file);
     }

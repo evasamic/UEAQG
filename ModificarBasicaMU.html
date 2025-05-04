@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuario - Unidad Educativa AQG</title>
+    <title>Administrador - Unidad Educativa AQG</title>
     <link rel="stylesheet" href="Modificadores.css">
     <link rel="stylesheet" href="Administrador.css">
 </head>
@@ -30,19 +30,20 @@
                         <li class="submenu">
                             <a href="#">Oferta Educativa</a>
                             <ul class="submenu-items">
-                                <li><a href="ModificarPreparatoriaU.html">Preparatoria</a></li>
-                                <li><a href="ModificarBasicaEU.html">Básica Elemental</a></li>
-                                <li><a href="ModificarBasicaMU.html">Básica Media</a></li>
-                                <li><a href="ModificarBasicaSU.html">Básica Superior</a></li>
-                                <li><a href="ModificarBachilleratoU.html">BGU</a></li>
+                                <li><a href="ModificarInicial.html">Inicial</a></li>
+                                <li><a href="ModificarPreparatoria.html">Preparatoria</a></li>
+                                <li><a href="ModificarBasicaE.html">Básica Elemental</a></li>
+                                <li><a href="ModificarBasicaM.html">Básica Media</a></li>
+                                <li><a href="ModificarBasicaS.html">Básica Superior</a></li>
+                                <li><a href="ModificarBachillerato.html">Bachillerato</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#">Noticias</a>
                             <ul class="submenu-items">
-                                <li><a href="ModificarNoticia1U.html">Noticia 1</a></li>
-                                <li><a href="ModificarNoticia2U.html">Noticia 2</a></li>
-                                <li><a href="ModificarNoticia3U.html">Noticia 3</a></li>
+                                <li><a href="ModificarNoticia1.html">Noticia 1</a></li>
+                                <li><a href="ModificarNoticia2.html">Noticia 2</a></li>
+                                <li><a href="ModificarNoticia3.html">Noticia 3</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -82,6 +83,86 @@
                 <!-- Mostrar la imagen actual para cambiarla -->
                 <div id="imagen-elementos-container">
                     <img src="" alt="Imagen Básica Media" id="imagen-basicam" class="basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario1basicam">Imagen de Horario: 5to A</label>
+                <input type="file" id="img-horario1basicam" name="img-horario1basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario1BM()">Cambiar Horario del 5to A</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario1 Basica Media" id="imagen-horario1basicam" class="horario1basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario2basicam">Imagen de Horario: 5to B</label>
+                <input type="file" id="img-horario2basicam" name="img-horario2basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario2BM()">Cambiar Horario del 5to B</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario2 Basica Media" id="imagen-horario2basicam" class="horario2basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario3basicam">Imagen de Horario: 5to C</label>
+                <input type="file" id="img-horario3basicam" name="img-horario3basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario3BM()">Cambiar Horario del 5to C</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario3 Basica Media" id="imagen-horario3basicam" class="horario3basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario4basicam">Imagen de Horario: 6to A</label>
+                <input type="file" id="img-horario4basicam" name="img-horario4basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario4BM()">Cambiar Horario del 6to A</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario4 Basica Media" id="imagen-horario4basicam" class="horario4basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario5basicam">Imagen de Horario: 6to B</label>
+                <input type="file" id="img-horario5basicam" name="img-horario5basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario5BM()">Cambiar Horario del 6to B</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario5 Basica Media" id="imagen-horario5basicam" class="horario5basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario6basicam">Imagen de Horario: 7mo A</label>
+                <input type="file" id="img-horario6basicam" name="img-horario6basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario6BM()">Cambiar Horario del 7mo A</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario6 Basica Media" id="imagen-horario6basicam" class="horario6basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario7basicam">Imagen de Horario: 7mo B</label>
+                <input type="file" id="img-horario7basicam" name="img-horario7basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario7BM()">Cambiar Horario del 7mo B</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario7 Basica Media" id="imagen-horario7basicam" class="horario7basicam-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario8basicam">Imagen de Horario: 7mo C</label>
+                <input type="file" id="img-horario8basicam" name="img-horario8basicam" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario8BM()">Cambiar Horario del 7mo C</button>
+
+                <!-- Mostrar la imagen actual para cambiarla-->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario8 Basica Media" id="imagen-horario8basicam" class="horario8basicam-img" width="400" height="200">
                 </div>
 
                 <button type="submit">Guardar cambios</button>

@@ -46,22 +46,22 @@ $conn->close();  // Cerrar la conexión a la base de datos
                 <a href="javascript:void(0);" class="dropdown-btn">¿Quiénes somos?</a>
                 <ul class="dropdown-content">
                     <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
-                    <li><a href="MisionVision.html">Misión y Visión</a></li>
+                    <li><a href="Proposito.html">Propósito / Misionero</a></li>
                     <li><a href="Autoridades.html">Autoridades</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-btn" id="oferta-btn">Oferta Educativa</a>
                 <ul class="dropdown-content" id="oferta-dropdown">
+                    <li><a href="Inicial.php">Inicial</a></li>
                     <li><a href="Preparatoria.php">Preparatoria</a></li>
                     <li><a href="BasicaElemental.php">Básica elemental</a></li>
                     <li><a href="BasicaMedia.php">Básica media</a></li>
                     <li><a href="BasicaSuperior.php">Básica superior</a></li>
-                    <li><a href="Bachillerato.php" class="active">Bachillerato general unificado</a></li>
+                    <li><a href="Bachillerato.php" class="active">Bachillerato</a></li>
                 </ul>
-            </li>            
+            </li>           
             <li><a href="Info.php">Información</a></li>
-            <li><a href="Recursos.html">Recursos</a></li>
         </ul>
     </nav>        
     
@@ -82,6 +82,141 @@ $conn->close();  // Cerrar la conexión a la base de datos
             <p>
                 <?php echo $row['Parrafo3Ba']; ?>
             </p>
+
+            <!-- HORARIOS -->
+            <div class="accordion-container">
+                <button class="accordion-button" onclick="toggleMainAccordion()">HORARIOS</button>
+                <div id="main-accordion-content" class="accordion-content">
+
+                    <!-- Bachillerato en Ciencias -->
+                    <div class="accordion-container">
+                        <button class="accordion-button" onclick="toggleGradeAccordion('ciencias')">Bachillerato en Ciencias</button>
+                        <div id="accordion-ciencias" class="accordion-content">
+                            
+                            <!-- 1ro de Bachillerato -->
+                            <div class="accordion-container">
+                                <button class="accordion-button" onclick="toggleGradeAccordion('1roCiencias')">1ro de Bachillerato</button>
+                                <div id="accordion-1roCiencias" class="accordion-content">
+                                    <button class="accordion-button" onclick="toggleAccordion('1')">1ro A</button>
+                                    <div id="accordion-content1" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario1Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('2')">1ro B</button>
+                                    <div id="accordion-content2" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario2Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('3')">1ro C</button>
+                                    <div id="accordion-content3" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario3Ba']; ?>" class="horario">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2do de Bachillerato -->
+                            <div class="accordion-container">
+                                <button class="accordion-button" onclick="toggleGradeAccordion('2doCiencias')">2do de Bachillerato</button>
+                                <div id="accordion-2doCiencias" class="accordion-content">
+                                    <button class="accordion-button" onclick="toggleAccordion('4')">2do A</button>
+                                    <div id="accordion-content4" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario4Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('5')">2do B</button>
+                                    <div id="accordion-content5" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario5Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('6')">2do C</button>
+                                    <div id="accordion-content6" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario6Ba']; ?>" class="horario">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3ro de Bachillerato -->
+                            <div class="accordion-container">
+                                <button class="accordion-button" onclick="toggleGradeAccordion('3roCiencias')">3ro de Bachillerato</button>
+                                <div id="accordion-3roCiencias" class="accordion-content">
+                                    <button class="accordion-button" onclick="toggleAccordion('7')">3ro A</button>
+                                    <div id="accordion-content7" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario7Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('8')">3ro B</button>
+                                    <div id="accordion-content8" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario8Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('9')">3ro C</button>
+                                    <div id="accordion-content9" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario9Ba']; ?>" class="horario">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bachillerato en Servicios Contables -->
+                    <div class="accordion-container">
+                        <button class="accordion-button" onclick="toggleGradeAccordion('contable')">Bachillerato en Servicios Contables</button>
+                        <div id="accordion-contable" class="accordion-content">
+
+                            <!-- 1ro de Bachillerato -->
+                            <div class="accordion-container">
+                                <button class="accordion-button" onclick="toggleGradeAccordion('1roContable')">1ro de Bachillerato</button>
+                                <div id="accordion-1roContable" class="accordion-content">
+                                    <button class="accordion-button" onclick="toggleAccordion('10')">1ro A</button>
+                                    <div id="accordion-content10" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario10Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('11')">1ro B</button>
+                                    <div id="accordion-content11" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario11Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('12')">1ro C</button>
+                                    <div id="accordion-content12" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario12Ba']; ?>" class="horario">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2do de Bachillerato -->
+                            <div class="accordion-container">
+                                <button class="accordion-button" onclick="toggleGradeAccordion('2doContable')">2do de Bachillerato</button>
+                                <div id="accordion-2doContable" class="accordion-content">
+                                    <button class="accordion-button" onclick="toggleAccordion('13')">2do A</button>
+                                    <div id="accordion-content13" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario13Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('14')">2do B</button>
+                                    <div id="accordion-content14" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario14Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('15')">2do C</button>
+                                    <div id="accordion-content15" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario15Ba']; ?>" class="horario">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3ro de Bachillerato -->
+                            <div class="accordion-container">
+                                <button class="accordion-button" onclick="toggleGradeAccordion('3roContable')">3ro de Bachillerato</button>
+                                <div id="accordion-3roContable" class="accordion-content">
+                                    <button class="accordion-button" onclick="toggleAccordion('16')">3ro A</button>
+                                    <div id="accordion-content16" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario16Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('17')">3ro B</button>
+                                    <div id="accordion-content17" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario17Ba']; ?>" class="horario">
+                                    </div>
+                                    <button class="accordion-button" onclick="toggleAccordion('18')">3ro C</button>
+                                    <div id="accordion-content18" class="accordion-content">
+                                        <img src="<?php echo $row['ImagenHorario18Ba']; ?>" class="horario">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -102,6 +237,7 @@ $conn->close();  // Cerrar la conexión a la base de datos
         </div>
         <button id="chatbot-button" onclick="toggleChat()">Chat</button>
     </div>
+    <script src="Horarios.js"></script>
     <script src="chatbot.js"></script>
     <script src="btnQuienesSomos.js"></script>
 </body>

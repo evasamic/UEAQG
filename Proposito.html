@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Alfonso Quiñónez George</title>
+    <link rel="icon" type="image/png" href="img/Logo-AQG.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="MisionVision.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <a href="Recursos.html" class="login-link">
+            <i class="fas fa-user"></i> Iniciar Sesión
+        </a>
+    </div>
+
+    <header>
+        <img src="img/Encabezado1.png" alt="Imagen de la Institución" width="1171" height="114">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-btn">¿Quiénes somos?</a>
+                <ul class="dropdown-content">
+                    <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
+                    <li><a href="Proposito.html" class="active">Propósito / Misionero</a></li>
+                    <li><a href="Autoridades.html">Autoridades</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-btn" id="oferta-btn">Oferta Educativa</a>
+                <ul class="dropdown-content" id="oferta-dropdown">
+                    <li><a href="Inicial.php">Inicial</a></li>
+                    <li><a href="Preparatoria.php">Preparatoria</a></li>
+                    <li><a href="BasicaElemental.php">Básica elemental</a></li>
+                    <li><a href="BasicaMedia.php">Básica media</a></li>
+                    <li><a href="BasicaSuperior.php">Básica superior</a></li>
+                    <li><a href="Bachillerato.php">Bachillerato</a></li>
+                </ul>
+            </li>
+            <li><a href="Info.php">Información</a></li>
+        </ul>
+    </nav>
+
+    <main class="proposito-container">
+        <section id="proposito">
+            <h2>Propósito / Misionero</h2>
+            <div class="title-line"></div> <!-- Línea verde debajo del título -->
+            <p>La Unidad Educativa “Alfonso Quiñonez George” es una institución fiscal, de larga trayectoria a nivel provincial, su oferta educativa va desde nivel inicial, preparatoria, básico elemental, básico medio, básico superior, Bachillerato en Ciencias y Bachillerato Técnico Servicios Contables. El perfil de salida se enmarca al establecido en el currículo del Ministerio de Educación formar bachilleres Justos, Solidarios e Innovadores.</p>
+            <p>Al ser una institución Guardiana de los Saberes Ancestrales, se revaloriza la cultura y saberes del pueblo afroesmeraldeño siendo una institución semillero de futuros poetas, escritores, deportistas, políticos…,la institución educativa en el 2027 espera posesionarse como un referente a nivel nacional en lo que concierne a procesos pedagógicos innovadores culturales, tecnológicos.</p>
+            <p>La institución se apoya en los principios de inclusión al contar con una población estudiantil perteneciente a diferentes etnias y situaciones de vulnerabilidad. De solidaridad porque se toma en cuenta y se hace nuestro los problemas, se busca solución de manera significativa a todos los conflictos que tienen los miembros de la comunidad educativa.</p>
+            <p>Se toma en cuenta el principio de la igualdad debido a que dentro de la institución no hay discriminación por raza, sexo, ni condición social. En el principio de la universalidad,  ya que la institución garantiza el derecho a la educación desde los primeros años de escolaridad, brindando una calidad y calidez educativa. Se trabaja para conseguir una educación transformadora, con la finalidad que los estudiantes puedan por medio de la educación realizar un cambio positivo mediante su proyecto de vida  y con ello contribuyan a la sociedad.</p>
+            <p>Una educación liberadora que permita a los estudiantes a través del análisis y reflexión comprender y desarraigar los patones negativos que se tienen que las personas de las etneas y clase sociales menos privilegiadas son incapaces de superarse.</p>
+            <p>Toda la comunidad educativo tiene derecho a ser escuchada y aportar en la mejora y engrandecimiento de la institución. Lograr el desarrollo cognitivo, emocional, psicomotor, el respeto y  fomentar la implementación de los derechos humanos promoviendo una cultura de paz, que transforme la problemática social de la provincia de Esmeraldas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Unidad Educativa Alfonso Quiñónez George. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="chatbot-container">
+        <div id="chatbox" class="hidden">
+            <div class="chatbox-header">
+                <span class="chatbox-title">Chat</span>
+                <button id="close-chatbot" onclick="toggleChat()">X</button>
+            </div>
+            <div id="chatlog"></div>
+            <div class="chatbox-input">
+                <input type="text" id="userInput" placeholder="Escribe un mensaje...">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+        <button id="chatbot-button" onclick="toggleChat()">Chat</button>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <script src="btnQuienesSomos.js"></script>
+</body>
+</html>

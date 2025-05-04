@@ -46,22 +46,22 @@ $conn->close();  // Cerrar la conexión a la base de datos
                 <a href="javascript:void(0);" class="dropdown-btn">¿Quiénes somos?</a>
                 <ul class="dropdown-content">
                     <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
-                    <li><a href="MisionVision.html">Misión y Visión</a></li>
+                    <li><a href="Proposito.html">Propósito / Misionero</a></li>
                     <li><a href="Autoridades.html">Autoridades</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-btn" id="oferta-btn">Oferta Educativa</a>
                 <ul class="dropdown-content" id="oferta-dropdown">
-                    <li><a href="Preparatoria.php" class="active">Preparatoria</a></li>
+                    <li><a href="Inicial.php">Inicial</a></li>
+                    <li><a href="Preparatoria.php">Preparatoria</a></li>
                     <li><a href="BasicaElemental.php">Básica elemental</a></li>
                     <li><a href="BasicaMedia.php">Básica media</a></li>
                     <li><a href="BasicaSuperior.php">Básica superior</a></li>
-                    <li><a href="Bachillerato.php">Bachillerato general unificado</a></li>
+                    <li><a href="Bachillerato.php">Bachillerato</a></li>
                 </ul>
             </li>            
             <li><a href="Info.php">Información</a></li>
-            <li><a href="Recursos.html">Recursos</a></li>
         </ul>
     </nav>      
     
@@ -82,6 +82,31 @@ $conn->close();  // Cerrar la conexión a la base de datos
             <p>
                 <?php echo $row['Parrafo3Prepa']; ?>
             </p>
+
+            <!-- HORARIOS -->
+            <div class="accordion-container">
+                <button class="accordion-button" onclick="toggleMainAccordion()">HORARIOS</button>
+                <div id="main-accordion-content" class="accordion-content">
+                    <div class="accordion-container">
+                        <button class="accordion-button" onclick="toggleAccordion1()">Preparatoria paralelo A</button>
+                        <div id="accordion-content1" class="accordion-content">
+                            <p><img src="<?php echo $row['ImagenHorario1Prepa']; ?>" alt="Inicial AQG" class="horario"></p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <button class="accordion-button" onclick="toggleAccordion2()">Preparatoria paralelo B</button>
+                        <div id="accordion-content2" class="accordion-content">
+                            <p><img src="<?php echo $row['ImagenHorario2Prepa']; ?>" alt="Inicial AQG" class="horario"></p>
+                        </div>
+                    </div>
+                    <div class="accordion-container">
+                        <button class="accordion-button" onclick="toggleAccordion3()">Preparatoria paralelo C</button>
+                        <div id="accordion-content3" class="accordion-content">
+                            <p><img src="<?php echo $row['ImagenHorario3Prepa']; ?>" alt="Inicial AQG" class="horario"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -102,6 +127,7 @@ $conn->close();  // Cerrar la conexión a la base de datos
         </div>
         <button id="chatbot-button" onclick="toggleChat()">Chat</button>
     </div>
+    <script src="Horarios.js"></script>
     <script src="chatbot.js"></script>
     <script src="btnQuienesSomos.js"></script>
 </body>

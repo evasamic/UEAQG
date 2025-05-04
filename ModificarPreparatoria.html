@@ -37,11 +37,12 @@
                         <li class="submenu">
                             <a href="#">Oferta Educativa</a>
                             <ul class="submenu-items">
+                                <li><a href="ModificarInicial.html">Inicial</a></li>
                                 <li><a href="ModificarPreparatoria.html">Preparatoria</a></li>
                                 <li><a href="ModificarBasicaE.html">Básica Elemental</a></li>
                                 <li><a href="ModificarBasicaM.html">Básica Media</a></li>
                                 <li><a href="ModificarBasicaS.html">Básica Superior</a></li>
-                                <li><a href="ModificarBachillerato.html">BGU</a></li>
+                                <li><a href="ModificarBachillerato.html">Bachillerato</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -89,6 +90,36 @@
                 <!-- Mostrar la imagen actual para cambiarla -->
                 <div id="imagen-elementos-container">
                     <img src="" alt="Imagen Preparatoria" id="imagen-preparatoria" class="preparatoria-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario1preparatoria">Imagen de Horario: Preparatoria A</label>
+                <input type="file" id="img-horario1preparatoria" name="img-horario1preparatoria" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario1Prepa()">Cambiar Horario del paralelo A</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario1 Preparatoria" id="imagen-horario1preparatoria" class="horario1preparatoria-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario2preparatoria">Imagen de Horario: Preparatoria B</label>
+                <input type="file" id="img-horario2preparatoria" name="img-horario2preparatoria" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario2Prepa()">Cambiar Horario del paralelo B</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario2 Preparatoria" id="imagen-horario2preparatoria" class="horario2preparatoria-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario3preparatoria">Imagen de Horario: Preparatoria C</label>
+                <input type="file" id="img-horario3preparatoria" name="img-horario3preparatoria" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario3Prepa()">Cambiar Horario del paralelo C</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario3 Preparatoria" id="imagen-horario3preparatoria" class="horario3preparatoria-img" width="400" height="200">
                 </div>
 
                 <button type="submit">Guardar cambios</button>

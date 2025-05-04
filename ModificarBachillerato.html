@@ -37,11 +37,12 @@
                         <li class="submenu">
                             <a href="#">Oferta Educativa</a>
                             <ul class="submenu-items">
+                                <li><a href="ModificarInicial.html">Inicial</a></li>
                                 <li><a href="ModificarPreparatoria.html">Preparatoria</a></li>
                                 <li><a href="ModificarBasicaE.html">Básica Elemental</a></li>
                                 <li><a href="ModificarBasicaM.html">Básica Media</a></li>
                                 <li><a href="ModificarBasicaS.html">Básica Superior</a></li>
-                                <li><a href="ModificarBachillerato.html">BGU</a></li>
+                                <li><a href="ModificarBachillerato.html">Bachillerato</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -82,13 +83,193 @@
                 <textarea id="texto3" name="texto3" placeholder="Escribe el tercer párrafo"></textarea>
 
                 <!-- Mostrar y permitir cambiar la imagen -->
-                <label for="img-bachillerato">Imagen de Básica Elemental</label>
+                <label for="img-bachillerato">Imagen de Bachillerato</label>
                 <input type="file" id="img-bachillerato" name="img-bachillerato" accept="image/*">
                 <button type="button" onclick="cambiarImagenBa()">Cambiar Imagen de Bachillerato</button>
 
                 <!-- Mostrar la imagen actual para cambiarla -->
                 <div id="imagen-elementos-container">
                     <img src="" alt="Imagen Bachillerato" id="imagen-bachillerato" class="bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario1bachillerato">Imagen de Horario: 1ro A Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario1bachillerato" name="img-horario1bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario1Ba()">Cambiar Horario del 1ro A de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario1 Bachillerato" id="imagen-horario1bachillerato" class="horario1bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario2bachillerato">Imagen de Horario: 1ro B Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario2bachillerato" name="img-horario2bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario2Ba()">Cambiar Horario del 1ro B de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario2 Bachillerato" id="imagen-horario2bachillerato" class="horario2bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario3bachillerato">Imagen de Horario: 1ro C Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario3bachillerato" name="img-horario3bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario3Ba()">Cambiar Horario del 1ro C de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario3 Bachillerato" id="imagen-horario3bachillerato" class="horario3bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario4bachillerato">Imagen de Horario: 2do A Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario4bachillerato" name="img-horario4bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario4Ba()">Cambiar Horario del 2do A de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario4 Bachillerato" id="imagen-horario4bachillerato" class="horario4bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario5bachillerato">Imagen de Horario: 2do B Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario5bachillerato" name="img-horario5bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario5Ba()">Cambiar Horario del 2do B de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario5 Bachillerato" id="imagen-horario5bachillerato" class="horario5bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario6bachillerato">Imagen de Horario: 2do C Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario6bachillerato" name="img-horario6bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario6Ba()">Cambiar Horario del 2do C de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario6 Bachillerato" id="imagen-horario6bachillerato" class="horario6bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario7bachillerato">Imagen de Horario: 3ro A Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario7bachillerato" name="img-horario7bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario7Ba()">Cambiar Horario del 3ro A de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario7 Bachillerato" id="imagen-horario7bachillerato" class="horario7bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario8bachillerato">Imagen de Horario: 3ro B Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario8bachillerato" name="img-horario8bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario8Ba()">Cambiar Horario del 3ro B de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario8 Bachillerato" id="imagen-horario8bachillerato" class="horario8bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario9bachillerato">Imagen de Horario: 3ro C Bachillerato en Ciencias</label>
+                <input type="file" id="img-horario9bachillerato" name="img-horario9bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario9Ba()">Cambiar Horario del 3ro C de Ciencias</button>
+
+                <!-- Mostrar la imagen actual para cambiarla-->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario9 Bachillerato" id="imagen-horario9bachillerato" class="horario9bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario10bachillerato">Imagen de Horario: 1ro A Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario10bachillerato" name="img-horario10bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario10Ba()">Cambiar Horario del 1ro A de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario10 Bachillerato" id="imagen-horario10bachillerato" class="horario10bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario11bachillerato">Imagen de Horario: 1ro B Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario11bachillerato" name="img-horario11bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario11Ba()">Cambiar Horario del 1ro B de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario11 Bachillerato" id="imagen-horario11bachillerato" class="horario11bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario12bachillerato">Imagen de Horario: 1ro C Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario12bachillerato" name="img-horario12bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario12Ba()">Cambiar Horario del 1ro C de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario12 Bachillerato" id="imagen-horario12bachillerato" class="horario12bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario13bachillerato">Imagen de Horario: 2do A Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario13bachillerato" name="img-horario13bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario13Ba()">Cambiar Horario del 2do A de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario13 Bachillerato" id="imagen-horario13bachillerato" class="horario13bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario14bachillerato">Imagen de Horario: 2do B Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario14bachillerato" name="img-horario14bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario14Ba()">Cambiar Horario del 2do B de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario14 Bachillerato" id="imagen-horario14bachillerato" class="horario14bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario15bachillerato">Imagen de Horario: 2do C Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario15bachillerato" name="img-horario15bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario15Ba()">Cambiar Horario del 2do C de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario15 Bachillerato" id="imagen-horario15bachillerato" class="horario15bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario16bachillerato">Imagen de Horario: 3ro A Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario16bachillerato" name="img-horario16bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario16Ba()">Cambiar Horario del 3ro A de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario16 Bachillerato" id="imagen-horario16bachillerato" class="horario16bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario17bachillerato">Imagen de Horario: 3ro B Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario17bachillerato" name="img-horario17bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario17Ba()">Cambiar Horario del 3ro B de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario17 Bachillerato" id="imagen-horario17bachillerato" class="horario17bachillerato-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario18bachillerato">Imagen de Horario: 3ro C Bachillerato en Servicios Contables</label>
+                <input type="file" id="img-horario18bachillerato" name="img-horario18bachillerato" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario18Ba()">Cambiar Horario del 3ro C de Contable</button>
+
+                <!-- Mostrar la imagen actual para cambiarla-->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario18 Bachillerato" id="imagen-horario18bachillerato" class="horario18bachillerato-img" width="400" height="200">
                 </div>
 
                 <button type="submit">Guardar cambios</button>

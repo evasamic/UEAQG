@@ -46,22 +46,22 @@ $conn->close();  // Cerrar la conexión a la base de datos
                 <a href="javascript:void(0);" class="dropdown-btn">¿Quiénes somos?</a>
                 <ul class="dropdown-content">
                     <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
-                    <li><a href="MisionVision.html">Misión y Visión</a></li>
+                    <li><a href="Proposito.html">Propósito / Misionero</a></li>
                     <li><a href="Autoridades.html">Autoridades</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="javascript:void(0);" class="dropdown-btn" id="oferta-btn">Oferta Educativa</a>
                 <ul class="dropdown-content" id="oferta-dropdown">
+                    <li><a href="Inicial.php">Inicial</a></li>
                     <li><a href="Preparatoria.php">Preparatoria</a></li>
                     <li><a href="BasicaElemental.php">Básica elemental</a></li>
                     <li><a href="BasicaMedia.php">Básica media</a></li>
                     <li><a href="BasicaSuperior.php">Básica superior</a></li>
-                    <li><a href="Bachillerato.php">Bachillerato general unificado</a></li>
+                    <li><a href="Bachillerato.php">Bachillerato</a></li>
                 </ul>
             </li>            
             <li><a href="Info.php">Información</a></li>
-            <li><a href="Recursos.html">Recursos</a></li>
         </ul>
     </nav>    
     

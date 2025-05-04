@@ -1,0 +1,78 @@
+/* Contenedor principal */
+.elemental-container {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Título */
+#elemental h2 {
+    color: #cc0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+/* Línea decorativa debajo del título */
+.title-line {
+    width: 100%;
+    height: 5px;
+    background-color: #008000;
+    margin: 0 auto 2rem auto;
+}
+
+/* Estilo de cada línea de información */
+#elemental p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-left: 5px solid #b8b814;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: #222;
+    flex-wrap: wrap;
+}
+
+/* Etiquetas (lado izquierdo) */
+#elemental label {
+    font-weight: bold;
+    color: #640b0b;
+    margin-right: 10px;
+    min-width: 250px;
+    text-align: left;
+}
+
+/* Valor (lado derecho) */
+#elemental span {
+    color: #333;
+    font-weight: normal;
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilos responsive para móviles */
+@media (max-width: 768px) {
+    #elemental p {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    #elemental label {
+        min-width: 100%;
+        margin-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    #elemental span {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+}

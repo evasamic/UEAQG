@@ -32,6 +32,13 @@
     margin: 0 auto 20px auto; /* Centra la imagen horizontalmente */
 }
 
+.horario {
+    width: 880px;
+    height: 494px;
+    display: block;
+    margin: 0 auto 20px auto; /* Centra la imagen horizontalmente */
+}
+
 
 /* Estilos del texto */
 #elemental p {
@@ -40,3 +47,33 @@
     color: #333;
     text-align: justify;
 }
+
+/* HORARIOS */
+.accordion-button {
+    background-color: #610000;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.accordion-content {
+    display: none;
+    background-color: #f1f1f1;
+}
+
+.accordion-button.active {
+    background-color: #9e2a2a !important;
+}
+
+.accordion-button:hover:not(.active) {
+    background-color: #e9e831; /* o el color que prefieras */
+    color: #cc0000;
+}
+

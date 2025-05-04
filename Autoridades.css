@@ -21,12 +21,6 @@
     margin: 0.5rem 0 2rem 0; /* Espacio debajo del título */
 }
 
-.autoridades {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
 .autoridad {
     text-align: center;
 }
@@ -48,4 +42,23 @@
 .autoridad p {
     font-size: 1.2rem;
     color: #555;
+}
+
+.autoridades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fila {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin-bottom: 2rem;
+}
+
+.fila-inferior {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

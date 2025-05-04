@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Unidad Educativa AQG</title>
+    <link rel="stylesheet" href="Modificadores.css">
+    <link rel="stylesheet" href="Administrador.css">
+</head>
+<body>
+
+    <!-- Encabezado de bienvenida -->
+    <header>
+        <h1>Modificar Información de Inicial</h1>
+    </header>
+
+    <div class="sidebar">
+        <!-- Logo de la institución -->
+        <div class="logo">
+            <img src="img/Logo-AQG.png" alt="Logo de la institución" class="logo-img">
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="menu">
+            <ul>
+                <li><a href="Administrador.html">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#">Usuarios</a>
+                    <ul class="submenu-items">
+                        <li><a href="CrearNuevoUsuario.html">Crear nuevos usuarios</a></li>
+                        <li><a href="CrearNuevoAdministrador.html">Crear nuevos admninistradores</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Modificar</a>
+                    <ul class="submenu-items">
+                        <li class="submenu">
+                            <a href="#">Oferta Educativa</a>
+                            <ul class="submenu-items">
+                                <li><a href="ModificarInicial.html">Inicial</a></li>
+                                <li><a href="ModificarPreparatoria.html">Preparatoria</a></li>
+                                <li><a href="ModificarBasicaE.html">Básica Elemental</a></li>
+                                <li><a href="ModificarBasicaM.html">Básica Media</a></li>
+                                <li><a href="ModificarBasicaS.html">Básica Superior</a></li>
+                                <li><a href="ModificarBachillerato.html">Bachillerato</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Noticias</a>
+                            <ul class="submenu-items">
+                                <li><a href="ModificarNoticia1.html">Noticia 1</a></li>
+                                <li><a href="ModificarNoticia2.html">Noticia 2</a></li>
+                                <li><a href="ModificarNoticia3.html">Noticia 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Botón de Cerrar Sesión al final -->
+        <div class="logout-container">
+            <button id="logout">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="modificar-elementos">
+            <h2>Formulario de Edición de Inicial</h2>
+            <form id="form-modificar" method="POST" enctype="multipart/form-data">
+                <!-- Mostrar y permitir editar el título -->
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Introduce el nuevo título">
+
+                <!-- Mostrar y permitir editar los párrafos -->
+                <label for="texto1">Primer párrafo</label>
+                <textarea id="texto1" name="texto1" placeholder="Escribe el primer párrafo"></textarea>
+
+                <label for="texto2">Segundo párrafo</label>
+                <textarea id="texto2" name="texto2" placeholder="Escribe el segundo párrafo"></textarea>
+
+                <label for="texto3">Tercer párrafo</label>
+                <textarea id="texto3" name="texto3" placeholder="Escribe el tercer párrafo"></textarea>
+
+                <!-- Mostrar y permitir cambiar la imagen -->
+                <label for="img-inicial">Imagen de Inicial</label>
+                <input type="file" id="img-inicial" name="img-inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenInicial()">Cambiar Imagen de Inicial</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Inicial" id="imagen-inicial" class="inicial-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario1inicial">Imagen de Horario paralelo A Sub-nivel 1</label>
+                <input type="file" id="img-horario1inicial" name="img-horario1inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario1Inicial()">Cambiar Horario de Sub-nivel 1</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario1 Inicial" id="imagen-horario1inicial" class="horario1inicial-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario2inicial">Imagen de Horario paralelo B Sub-nivel 1</label>
+                <input type="file" id="img-horario2inicial" name="img-horario2inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario2Inicial()">Cambiar Horario de Sub-nivel 2</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario2 Inicial" id="imagen-horario2inicial" class="horario2inicial-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario3inicial">Imagen de Horario paralelo C Sub-nivel 1</label>
+                <input type="file" id="img-horario3inicial" name="img-horario3inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario3Inicial()">Cambiar Horario de Sub-nivel 2</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario3 Inicial" id="imagen-horario3inicial" class="horario3inicial-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario4inicial">Imagen de Horario paralelo A Sub-nivel 2</label>
+                <input type="file" id="img-horario4inicial" name="img-horario4inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario4Inicial()">Cambiar Horario de Sub-nivel 2</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario4 Inicial" id="imagen-horario4inicial" class="horario4inicial-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario5inicial">Imagen de Horario paralelo B Sub-nivel 2</label>
+                <input type="file" id="img-horario5inicial" name="img-horario5inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario5Inicial()">Cambiar Horario de Sub-nivel 2</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario5 Inicial" id="imagen-horario5inicial" class="horario5inicial-img" width="400" height="200">
+                </div>
+
+                <!-- Mostrar y permitir cambiar la imagen del Horario-->
+                <label for="img-horario6inicial">Imagen de Horario paralelo C Sub-nivel 2</label>
+                <input type="file" id="img-horario6inicial" name="img-horario6inicial" accept="image/*">
+                <button type="button" onclick="cambiarImagenHorario6Inicial()">Cambiar Horario de Sub-nivel 2</button>
+
+                <!-- Mostrar la imagen actual para cambiarla -->
+                <div id="imagen-elementos-container">
+                    <img src="" alt="Imagen Horario6 Inicial" id="imagen-horario6inicial" class="horario6inicial-img" width="400" height="200">
+                </div>
+
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="ModificarInicial.js"></script>
+    <script src="Administrador.js"></script>
+</body>
+</html>

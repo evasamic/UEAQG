@@ -258,7 +258,7 @@ function askProblemasInicioSesion() {
     const chatlog = document.getElementById('chatlog');
     createUserBubble("🔒 Usuario con problema de inicio de sesión");
 
-    const correo = "eva.carrera.bone@utelvt.edu.ec";
+    const correo = "ueaqg.tic@gmail.com";
     const asunto = encodeURIComponent("RESTABLECIMIENTO DE CONTRASEÑA");
     const cuerpo = encodeURIComponent(`Reciba un cordial saludo.
 
